@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lista de Alunos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+ <body>
+  <div class="container">
+    <h1>Lista de Alunos</h1>
+    <hr>
+    <table border="2">
+      <tr>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Telefone</td>
+        <td>Cpf</td>
+        <td>E-mail</td>
+        <td>Excluir</td>
+        <td>Editar</td>
+
+      </tr>
+      {% for pessoa in pessoas %}
+      <tr>
+        <td>{{ pessoa._id }}</td>
+        <td>{{ pessoa.nome }}</td>
+        <td>{{ pessoa.telefone }}</td>
+        <td>{{ pessoa.cpf }}</td>
+        <td>{{ pessoa.email }}</td>
+        <td style="text-align: center"><a class="btn btn-danger" href="/excluir/{{pessoa._id}}">X</a></td>
+        <td><a class="btn btn-warning" href="/atualizar/{{pessoa._id}}">Editar</a></td>
+
+      {% endfor %}
+      </tr>
+    </table>
+    <a style="margin-top: 2rem" class="btn btn-primary" href="/index">Voltar</a>
+  </div>
+</body>
+</html>
