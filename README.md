@@ -1,7 +1,9 @@
 # Trabalho para Disciplina de Engenharia de Software II
 
-# Trabalho com o Framework Flask
+# Trabalho com o Framework Flask com o entuito de explicar o framework criando uma aplicação simples
 
+# Link do trabalho prospoto
+https://docs.google.com/document/d/1SE2Ij0NO4KRaKBik7kLqaLuog4DcjT0RUunjQB_RU4w/edit
 
 Requisitos básicos para poder utiliza-lo:
 
@@ -37,7 +39,3 @@ Tecnologias utilizadas no projeto:
 * Python
 * Flask
 * SQLite/SQLAlchemy
-
-# Link do trabalho prospoto
-https://docs.google.com/document/d/1SE2Ij0NO4KRaKBik7kLqaLuog4DcjT0RUunjQB_RU4w/edit
-
