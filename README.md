@@ -39,3 +39,6 @@ Tecnologias utilizadas no projeto:
 * Python
 * Flask
 * SQLite/SQLAlchemy
+
+Link do vídeo explicando a instalação e criando um Hello World
+https://www.youtube.com/watch?v=XomqXCAbsGs&feature=youtu.be
